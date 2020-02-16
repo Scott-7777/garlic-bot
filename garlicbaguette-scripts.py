@@ -2,6 +2,7 @@ import discord
 import asyncio
 import random
 import openpyxl
+import os
 
 client = discord.Client()
 
@@ -75,6 +76,6 @@ async def on_message(message):
             i += 1  
 
 
-
-client.run("Njc3NDM2NzM2OTU0OTU3ODI2.XkZoig.fsTWxYxT767iXnw9OIJ6vkZxDAE")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
 
